@@ -8,21 +8,21 @@ from helpers.filters import command, other_filters2
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://te.legra.ph/file/098114fb5baa9e4fc3884.jpg",
-                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən {bot}!\nSəsli söhbətlərdə musiqi oxuyan botam. Ban yetkisiz, Səs yetkisi verib, Asistanı qrupa əlavə edin.\n\nSahibəm👉  [Günel](https://t.me/GOLDFED_OWNER)**"""),
+                "https://te.legra.ph/file/db6c6724ce086aaa61dc6.jpg",
+                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən {bot}!\nSəsli söhbətlərdə musiqi oxuyan botam. Ban yetkisiz, Səs yetkisi verib, Asistanı qrupa əlavə edin.\n\nSahibəm👉  [Zəhra](https://t.me/Uzaq_durrr)**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/GOLD_MUSIIC_BOT?startgroup=true"
+                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/Zehra_Music_Bot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/@GOLD_Music_Asistant"
+                        "🔊 Asistan", url="https://t.me/ZehraMusicAsistant"
                     ),
                     InlineKeyboardButton(
-                        "Support 💬", url="https://t.me/GOLD_fed_team"
+                        "Support 💬", url="https://t.me/dustaq32"
                     )
                 ],
                 [
@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "🧩 Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Rəsmi Kanal 🇦🇿", url=f"https://t.me/GOLD_RESMi"
+                        "Rəsmi Kanal 🇦🇿", url=f"https://t.me/qem_xane"
                     )
                 ]
                 
@@ -56,7 +56,7 @@ async def bilgi(_, message: Message):
                          "Geri 🔄", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "Sahibəm🇦🇿", url="https://t.me/GOLDFED_OWNER")
+                         "Sahibəm🇦🇿", url="https://t.me/Uzaq_durrr")
                  ]
              ]
          )
@@ -82,7 +82,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "Sahibəm 🇦🇿", url="https://t.me/GOLDFED_OWNER")
+            "Sahibəm 🇦🇿", url="https://t.me/Uzaq_durrr")
         ]
       ]
      ))
@@ -95,7 +95,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "Sahibəm 🇦🇿", url="https://t.me/GOLDFED_OWNER")
+                         "Sahibəm 🇦🇿", url="https://t.me/Uzaq_durrr")
                  ],
                  [
                      InlineKeyboardButton(
@@ -113,7 +113,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "Sahibəm 🇦🇿", url="https://t.me/GOLDFED_OWNER")
+                         "Sahibəm 🇦🇿", url="https://t.me/Uzaq_durrr")
                  ],
                  [
                      InlineKeyboardButton(
@@ -126,20 +126,20 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**Salam {query.from_user.mention} 🎵\nMən {bot}!\nSəsli sohbətlərdə musiqi oxuyan botam. Ban yetkisiz, Səs yönətim yetki verib, Asistanı qrupa əlavə edin.\n\nSahibəm👉  [Günel](https://t.me/GOLDFED_OWNER)**""",
+    await query.edit_message_text(f"""**Salam {query.from_user.mention} 🎵\nMən {bot}!\nSəsli sohbətlərdə musiqi oxuyan botam. Ban yetkisiz, Səs yönətim yetki verib, Asistanı qrupa əlavə edin.\n\nSahibəm👉  [Zəhra](https://t.me/Uzaq_durrr)**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/GOLD_MUSIIC_BOT?startgroup=true"
+                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/Zehra_Music_BotMusicstartgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/GOLD_Music_Asistant"
+                        "🔊 Asistan", url="https://t.me/ZehraMusicAsistant"
                     ),
                     InlineKeyboardButton(
-                        "Support 💬", url="https://t.me/GOLD_fed_team"
+                        "Support 💬", url="https://t.me/dustaq32"
                     )
                 ],
                 [
@@ -147,7 +147,7 @@ async def cbstart(_, query: CallbackQuery):
                         "🧩 Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Rəsmi Kanal 🇦🇿", url=f"https://t.me/GOLD_RESMi"
+                        "Rəsmi Kanal 🇦🇿", url=f"https://t.me/qem_xane"
                     )
                 ]
                 
